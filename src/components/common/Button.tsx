@@ -18,4 +18,5 @@ const MyButton = styled.button`
   cursor: pointer;
   background-color: white;
   width: 130px;
+  font-size: 18px;
 `

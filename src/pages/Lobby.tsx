@@ -57,7 +57,7 @@ const Title = styled.h1`
   text-align: center;
 `
 const InputBtn = styled.button`
-  width: 15%;
+  width: 200px;
   background-color: #f6d656;
   padding: 10px;
   border-radius: 30px;
