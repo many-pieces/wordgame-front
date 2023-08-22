@@ -9,6 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "homepage":"",
   "dependencies": {
     "@types/pixi.js": "^5.0.0",
     "@types/recoil": "^0.0.9",

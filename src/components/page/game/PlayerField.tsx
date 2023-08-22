@@ -19,7 +19,6 @@ const PlayerField = () => {
 export default PlayerField;
 
 const PlayerZone = styled.div`
-  //background-color: #dbf5b3;
   width: 100vw;
   height: 65%;
   padding: 30px;
@@ -28,6 +27,7 @@ const PlayerZone = styled.div`
   align-items: end;
   background-size: cover;
   background-image: url("/assets/bg/gameBg.jpg");
+  overflow: auto;
   //background: linear-gradient(#30ab30 50%, #363535 50%);
   //background-size: 100% 50px;
 `;
