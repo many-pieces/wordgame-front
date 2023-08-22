@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 type ButtonType = {
     input : string;
+    onClick: () => void;
 }
 const Button = ({input} : ButtonType) => {
 

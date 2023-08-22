@@ -1,11 +1,13 @@
 import styled from "styled-components";
-import Room from "../components/page/Lobby/Room.tsx";
-import Button from "../components/common/Button.tsx";
+import Room from "../components/page/lobby/Room.tsx";
 const Lobby = () => {
+    const createRoom = () => {
+        alert("준비 중인 기능입니다.");
+    }
   return (
       <Main>
           <Title>직장인 쿵쿵따</Title>
-          <InputBtn input='방 만들기'/>
+          <InputBtn onClick={createRoom}>방 만들기</InputBtn>
           <Container>
               <Room name="내가최고야 음하하"/>
               <Room name="어쩔티비~ 저쩔티비~"/>
@@ -54,7 +56,12 @@ const Title = styled.h1`
   color: white;
   text-align: center;
 `
-const InputBtn = styled(Button)`
-  width: 30%;
-  background-color: red;
+const InputBtn = styled.button`
+  width: 15%;
+  background-color: #f6d656;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin: 10px 0 30px 0;
+  cursor: pointer;
 `
