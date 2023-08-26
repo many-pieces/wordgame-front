@@ -1,6 +1,6 @@
 import PlayerImg from "/assets/players/player.png"
 import styled from "styled-components";
-import Crown from "/assets/players/crown.png"
+import CrownImg from "/assets/players/crown.png"
 
 type PlayerProps = {
     point : number
@@ -12,7 +12,7 @@ const Player = (props : PlayerProps) => {
         <Container>
             <Inner>
                 {/*<LankMark>{props.lank}</LankMark>*/}
-                <img src={Crown} alt={"1등왕관"}/>
+                <Crown src={CrownImg} alt={"1등왕관"}/>
                 <NickName>닉네임</NickName>
             </Inner>
             <Img src={PlayerImg}></Img>
@@ -31,6 +31,13 @@ const Inner = styled.div`
   align-items: end;
   padding-bottom: 5px;
 `;
+const Crown = styled.img`
+  @media all and (max-width:767px) {
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+  }
+`;
 // const LankMark = styled.div`
 //   background-color: #f37330;
 //   width: 25px;
@@ -44,8 +51,8 @@ const Inner = styled.div`
 //   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 // `;
 const Img = styled.img`
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  width: 15vw;
 `;
 
 const Point = styled.div`
@@ -55,6 +62,11 @@ const Point = styled.div`
   padding: 3px;
   width: 80px;
   margin: 0 auto;
+  @media all and (max-width:767px) {
+    font-size: 18px;
+    padding: 0;
+    width: 60px;
+  }
 `;
 const NickName = styled.p`
   color: white;
@@ -63,4 +75,9 @@ const NickName = styled.p`
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 2px 5px;
+  @media all and (max-width:767px) {
+    font-size: 15px;
+    padding: 0;
+    width: 50px;
+  }
 `;

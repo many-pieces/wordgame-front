@@ -39,10 +39,15 @@ const LankMark = styled.div`
   color: white;
   font-size: 22px;
   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  @media all and (max-width:767px) {
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+  }
 `;
 const Img = styled.img`
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  width: 12vw;
 `;
 
 const Point = styled.div`
@@ -52,6 +57,12 @@ const Point = styled.div`
   padding: 3px;
   width: 80px;
   margin: 0 auto;
+
+  @media all and (max-width:767px) {
+    font-size: 18px;
+    padding: 0;
+    width: 60px;
+  }
 `;
 const NickName = styled.p`
   color: white;
@@ -60,4 +71,9 @@ const NickName = styled.p`
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 2px 5px;
+  @media all and (max-width:767px) {
+    font-size: 15px;
+    padding: 0;
+    width: 50px;
+  }
 `;

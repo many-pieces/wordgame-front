@@ -25,4 +25,8 @@ const Container = styled.div`
   background-color: black;
   color: white;
   border: 2px solid greenyellow;
+  padding: 3px;
+  @media all and (max-width:767px) {
+    font-size: 13px;
+  }
 `;

@@ -24,5 +24,5 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   justify-content:space-between;
-  padding: 10px;
+  padding: 5px;
 `;

@@ -10,6 +10,7 @@ const Game = () => {
         <Main>
             <Link to={`/`}><ExitBtn>X</ExitBtn></Link>
             <AnswerField input={answer} player={"zl존피스킹"}/>
+                <Text>{'---------------------결승선---------------------'}</Text>
             <PlayerField/>
             <InputField  input={answer}/>
 
@@ -26,7 +27,14 @@ const Main = styled.div`
   background-size: cover;
   //background-image: url("/assets/bg/lobby.jpg");
 `;
-
+const Text = styled.p`
+  font-size: 12px;
+  background-color: rgba(8,28,51);
+  @media all and (max-width:767px) {
+    font-size: 15px;
+    color: greenyellow;
+  }
+`;
 const ExitBtn = styled.button`
   position: absolute;
   right: 10px;
